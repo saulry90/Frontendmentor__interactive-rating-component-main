@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap");
+/* @font-face {
+      font-family: 'Overpass';
+      src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
+  } */
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  width: 415px;
+  height: 420px;
+  padding: 2rem;
+  background-color: #1c232b;
+  border-radius: 35px;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+}
+
+.card .star {
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #272e38;
+}
+
+.card .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .rating span {
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #272e38;
+}
+
+.card input[type=submit] {
+  border-radius: 50px;
+  width: 100%;
+  padding: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
