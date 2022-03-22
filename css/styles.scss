@@ -3,54 +3,142 @@
       font-family: 'Overpass';
       src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
   } */
-
+body {margin: 0;}
 .layout {
+      position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100vw;
       height: 100vh;
-}
-  .card {
-      width: 415px;
-      height: 420px;
-      padding: 2rem;
-      background-color: #1c232b;
-      border-radius: 35px;
-      color: hsl(0, 0%, 100%);
-      font-family: 'Overpass', sans-serif;
+      background-color: hsl(216, 12%, 8%);
 
-      & .star {
-            width: 15px;
-            height: 15px;
-            display: flex; 
-            padding: 15px;
-            border-radius: 50px;
-            background-color: #272e38;
-            
-            
-            
-      }
+      & .card {
+            width: 350px;
+            height: 350px;
+            padding: 2rem;
+            background-color: #1f2630;
+            border-radius: 35px;
+            color: hsl(0, 0%, 100%);
+            font-family: 'Overpass', sans-serif;
+            font-size: 15px;
 
-      & .rating {
-            display: flex;
-            justify-content: space-evenly;
-          
-            & span {
+            & .star {
                   width: 15px;
                   height: 15px;
                   display: flex; 
-                  align-items: center;
-                  justify-content: center;
                   padding: 15px;
                   border-radius: 50px;
-                  background-color: #272e38;
+                  background-color: #262f38; 
+            }
+
+            & h1 {
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  margin-top: 2rem;
+            }
+
+            & p {
+                  color: hsl(217, 12%, 63%);
+                  line-height: 1.4rem;
+                  margin-top: -0.2rem;
+            }
+
+            & form {
+                  margin-top: -0.5rem;
+
+            & ul {
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+
+                        & li {
+                              display: inline-block;
+                              //margin-right: 15px;
+
+                              & input {
+                                    visibility:hidden;
+                                    }
+
+                              &  label {
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 54px;
+                                    height: 54px;
+                                    border-radius: 50%;
+                                    background: #272e38;
+                                    color: hsl(217, 12%, 63%);
+                                    line-height: 50px;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+
+                                    &:hover {
+                                          background-color: hsl(25, 97%, 53%);
+                                          color: hsl(0, 0%, 100%);
+                                    }
+                                    }
+
+                              &  input:checked + label {
+                                    color: hsl(0, 0%, 100%);
+                                    background-color: hsl(217, 12%, 63%);
+                                    }
+                  }
+                  
+                  }
+            }
+
+            /* & .rating {
+                  display: flex;
+                  justify-content: space-evenly;
+            
+                  & span {
+                        width: 15px;
+                        height: 15px;
+                        display: flex; 
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px;
+                        border-radius: 50px;
+                        background-color: #272e38;
+                        color: hsl(217, 12%, 63%);
+                  }
+            }
+      */
+            & input[type=submit] {
+                  width: 100%;
+                  padding: 1rem;
+                  margin-top: 2rem;
+                  border-radius: 50px;
+                  border: 0;
+                  background-color: hsl(25, 97%, 53%);
+                  color: hsl(0, 0%, 100%);
+                  letter-spacing: 0.2rem;
+                  cursor: pointer;
+                  
+                  &:hover {
+                        background-color: hsl(0, 0%, 100%);
+                        color: hsl(25, 97%, 53%);
+                  }
             }
       }
 
-      & input[type=submit] {
-            border-radius: 50px;
-            width: 100%;
-            padding: 1rem;
+      & .attribution  {
+            position: absolute;
+            bottom: 1rem;
+            color: #6089d2;
+
+            & a {
+                  color: #306edd;
+
+                  &:hover {
+                        text-decoration: none;
+                  }
+            }
       }
+
 }

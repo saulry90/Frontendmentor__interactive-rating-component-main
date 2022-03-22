@@ -3,10 +3,19 @@
       font-family: 'Overpass';
       src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
   } */
+body {
+  margin: 0;
+}
+
 .layout {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -15,19 +24,38 @@
           align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: #121417;
 }
 
-.card {
-  width: 415px;
-  height: 420px;
+.layout .card {
+  width: 350px;
+  height: 350px;
   padding: 2rem;
-  background-color: #1c232b;
+  background-color: #1f2630;
   border-radius: 35px;
   color: white;
   font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  /* & .rating {
+                  display: flex;
+                  justify-content: space-evenly;
+            
+                  & span {
+                        width: 15px;
+                        height: 15px;
+                        display: flex; 
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px;
+                        border-radius: 50px;
+                        background-color: #272e38;
+                        color: hsl(217, 12%, 63%);
+                  }
+            }
+      */
 }
 
-.card .star {
+.layout .card .star {
   width: 15px;
   height: 15px;
   display: -webkit-box;
@@ -35,21 +63,47 @@
   display: flex;
   padding: 15px;
   border-radius: 50px;
-  background-color: #272e38;
+  background-color: #262f38;
 }
 
-.card .rating {
+.layout .card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.layout .card p {
+  color: #959eac;
+  line-height: 1.4rem;
+  margin-top: -0.2rem;
+}
+
+.layout .card form {
+  margin-top: -0.5rem;
+}
+
+.layout .card form ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.card .rating span {
-  width: 15px;
-  height: 15px;
+.layout .card form ul li {
+  display: inline-block;
+}
+
+.layout .card form ul li input {
+  visibility: hidden;
+}
+
+.layout .card form ul li label {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +113,54 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px;
-  border-radius: 50px;
-  background-color: #272e38;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #272e38;
+  color: #959eac;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-.card input[type=submit] {
-  border-radius: 50px;
+.layout .card form ul li label:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.layout .card form ul li input:checked + label {
+  color: white;
+  background-color: #959eac;
+}
+
+.layout .card input[type=submit] {
   width: 100%;
   padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 50px;
+  border: 0;
+  background-color: #fb7413;
+  color: white;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.layout .card input[type=submit]:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.layout .attribution {
+  position: absolute;
+  bottom: 1rem;
+  color: #6089d2;
+}
+
+.layout .attribution a {
+  color: #306edd;
+}
+
+.layout .attribution a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
