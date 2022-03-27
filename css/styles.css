@@ -3,6 +3,23 @@
       font-family: 'Overpass';
       src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
   } */
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 body {
   margin: 0;
 }
@@ -36,23 +53,6 @@ body {
   color: white;
   font-family: 'Overpass', sans-serif;
   font-size: 15px;
-  /* & .rating {
-                  display: flex;
-                  justify-content: space-evenly;
-            
-                  & span {
-                        width: 15px;
-                        height: 15px;
-                        display: flex; 
-                        align-items: center;
-                        justify-content: center;
-                        padding: 15px;
-                        border-radius: 50px;
-                        background-color: #272e38;
-                        color: hsl(217, 12%, 63%);
-                  }
-            }
-      */
 }
 
 .layout .card .star {
@@ -150,17 +150,61 @@ body {
   color: #fb7413;
 }
 
+.layout .card-thk {
+  width: 350px;
+  height: 350px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f2630;
+  border-radius: 35px;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.layout .card-thk span {
+  margin-top: 2rem;
+  padding: 6px 16px;
+  background-color: #272e38;
+  color: #fb7413;
+  border-radius: 50px;
+}
+
+.layout .card-thk h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.layout .card-thk p {
+  color: #959eac;
+  line-height: 1.4rem;
+  margin-top: -0.2rem;
+}
+
 .layout .attribution {
   position: absolute;
   bottom: 1rem;
-  color: #6089d2;
+  color: #61728d;
 }
 
 .layout .attribution a {
-  color: #306edd;
+  color: #788ba9;
+  text-decoration: none;
 }
 
 .layout .attribution a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

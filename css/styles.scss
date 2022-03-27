@@ -3,6 +3,15 @@
       font-family: 'Overpass';
       src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
   } */
+
+.center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
 body {margin: 0;}
 .layout {
       position: relative;
@@ -57,7 +66,6 @@ body {margin: 0;}
 
                         & li {
                               display: inline-block;
-                              //margin-right: 15px;
 
                               & input {
                                     visibility:hidden;
@@ -92,23 +100,6 @@ body {margin: 0;}
                   }
             }
 
-            /* & .rating {
-                  display: flex;
-                  justify-content: space-evenly;
-            
-                  & span {
-                        width: 15px;
-                        height: 15px;
-                        display: flex; 
-                        align-items: center;
-                        justify-content: center;
-                        padding: 15px;
-                        border-radius: 50px;
-                        background-color: #272e38;
-                        color: hsl(217, 12%, 63%);
-                  }
-            }
-      */
             & input[type=submit] {
                   width: 100%;
                   padding: 1rem;
@@ -127,16 +118,55 @@ body {margin: 0;}
             }
       }
 
+      // Card Thank You
+      & .card-thk {
+            width: 350px;
+            height: 350px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background-color: #1f2630;
+            border-radius: 35px;
+            color: hsl(0, 0%, 100%);
+            font-family: 'Overpass', sans-serif;
+            font-size: 15px;
+
+            & span {
+                  margin-top: 2rem;
+                  padding: 6px 16px;
+                  background-color: #272e38;
+                  color: hsl(25, 97%, 53%);
+                  border-radius: 50px;
+            }
+            
+            & h1 {
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  margin-top: 2rem;
+            }
+
+            & p {
+                  color: hsl(217, 12%, 63%);
+                  line-height: 1.4rem;
+                  margin-top: -0.2rem;
+            }
+      }
+
       & .attribution  {
             position: absolute;
             bottom: 1rem;
-            color: #6089d2;
+            color: #61728d;
+            
 
             & a {
-                  color: #306edd;
+                  color: #788ba9;
+                  text-decoration: none;
 
                   &:hover {
-                        text-decoration: none;
+                        text-decoration: underline;
                   }
             }
       }
