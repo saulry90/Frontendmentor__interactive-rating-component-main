@@ -175,7 +175,7 @@ body {margin: 0;}
 
 @media screen and (max-width: 475px) {
       .card {
-            transform: scale(0.7);
+            transform: scale(0.9);
       }
       .attribution {
             width: 80%;
@@ -184,5 +184,10 @@ body {margin: 0;}
             & span {
                   display: block;
             }
+      }
+    }
+    @media screen and (max-width: 390px) {
+      .card {
+            width: 310px !important;
       }
     }
