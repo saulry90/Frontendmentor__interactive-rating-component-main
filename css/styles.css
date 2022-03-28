@@ -209,7 +209,7 @@ body {
 }
 
 @media screen and (max-width: 475px) {
-  .card {
+  .card, .card-thk {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
@@ -223,7 +223,7 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-  .card {
+  .card, .card-thk {
     width: 310px !important;
   }
 }
