@@ -158,11 +158,11 @@ body {margin: 0;}
       & .attribution  {
             position: absolute;
             bottom: 1rem;
-            color: #61728d;
+            color: #2e3540;
             
 
             & a {
-                  color: #788ba9;
+                  color: #363e4b;
                   text-decoration: none;
 
                   &:hover {
@@ -172,3 +172,17 @@ body {margin: 0;}
       }
 
 }
+
+@media screen and (max-width: 475px) {
+      .card {
+            transform: scale(0.7);
+      }
+      .attribution {
+            width: 80%;
+            text-align: center;
+
+            & span {
+                  display: block;
+            }
+      }
+    }

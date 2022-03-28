@@ -196,15 +196,29 @@ body {
 .layout .attribution {
   position: absolute;
   bottom: 1rem;
-  color: #61728d;
+  color: #2e3540;
 }
 
 .layout .attribution a {
-  color: #788ba9;
+  color: #363e4b;
   text-decoration: none;
 }
 
 .layout .attribution a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 475px) {
+  .card {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .attribution {
+    width: 80%;
+    text-align: center;
+  }
+  .attribution span {
+    display: block;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
