@@ -213,6 +213,9 @@ body {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
+  .card-thk p br {
+    display: none;
+  }
   .attribution {
     width: 80%;
     text-align: center;

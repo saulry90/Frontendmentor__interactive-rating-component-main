@@ -177,6 +177,9 @@ body {margin: 0;}
       .card, .card-thk {
             transform: scale(0.9);
       }
+      .card-thk p br {
+            display: none;
+      }
       .attribution {
             width: 80%;
             text-align: center;
